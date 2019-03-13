@@ -1,10 +1,10 @@
-function takeANumber(line, name) 
+function takeANumber(line, name)
 {
   line.push(name);
   return `Welcome, ${name}. You are number ${line.length} in line.`;
 }
 
-function nowServing(line) 
+function nowServing(line)
 {
   if (!line.length)
   {
@@ -13,14 +13,14 @@ function nowServing(line)
   return `Currently serving ${line.shift()}.`;
 }
 
-function currentLine(line) 
+function currentLine(line)
 {
-  if (!line.length) 
+  if (!line.length)
   {
     return `The line is currently empty.`;
   }
   var lineNumbers = [];
-  for (var i = 0; i < line.length; i++) 
+  for (var i = 0; i < line.length; i++)
   {
     lineNumbers.push(` ${i+1}. ${line[i]}`);
   }
