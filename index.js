@@ -4,6 +4,19 @@ function takeANumber(line, name)
   return `Welcome, ${name}. You are number ${line.length} in line.`;
 }
 
+var lineNumber = 0;
+
+function takeANumberAlt(line) 
+{
+  lineNumber++;
+  line.push(lineNumber);
+  return lineNumber;
+}
+
+function resetLineNumber() {
+  lineNumber = 0;
+}
+
 function nowServing(line)
 {
   if (!line.length)
